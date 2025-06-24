@@ -5,6 +5,9 @@
 #        by Psylla, The Little Flea        #
 #   https://thelittleflea.com/prjx/ClITS   #
 #                                          #
+# Licensed Under:                          #
+#   - https://thelittleflea.com/lic/mit    #
+#                                          #
 # Easily create a Cloud-Init enabled VM    #
 # template with embedded common utilities  #
 # accessible in the Proxmox UI.            #
@@ -73,6 +76,9 @@ show_whiptail_header() {
       #              $BRANDING_VERSION $BRANDING_COPYRIGHT              #
       #        $BRANDING_NAME        #
       #   $BRANDING_URL   #
+      #                                          #
+      # Licensed Under:                          #
+      #   - https://thelittleflea.com/lic/mit    #
       #                                          #
       # Easily create a Cloud-Init enabled VM    #
       # template with embedded common utilities  #
