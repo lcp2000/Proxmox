@@ -215,7 +215,6 @@ function show_header() {
   echo "#  $BRANDING_LOGO_ICON $BRANDING_TITLE $BRANDING_VERSION     "
   echo "#     $BRANDING_NAME"
   echo "#     $BRANDING_URL"
-#  [[ -n "$BRANDING_LOGO" ]] && echo "#     Logo: $BRANDING_LOGO"
   echo "###############################################"
   echo
 }
