@@ -1,1 +1,2 @@
-Specific License for each of the projects available
+#Licensing
+Specific License's for each of the projects available
