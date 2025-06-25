@@ -195,19 +195,6 @@ case "$VMID_SCHEME" in
   "5t-digit") next_vmid=$(find_next_vmid 20000 29999) ;;
 esac
 
-#############
-### DEBUG ###
-#############
-# Confirm menu built
-#echo "FILENAME: $FILENAME"
-#echo "DISTRO_CODE: $DISTRO_CODE"
-#echo "DISTRO_FULL: $DISTRO_FULL"
-#echo "DISTRO_URL: $DISTRO_URL"
-#echo "DISTRO_LABEL: $DISTRO_LABEL"
-#exit 1
-#############
-
-
 # -------------- Branding Headers --------------
 function show_header() {
   #clear
