@@ -1,8 +1,8 @@
 <h2>Proxmox Cloud-Init Template Service</h2>
 
-A terminal-based utility that helps you build cloud-init–ready Linux VM templates in Proxmox VE.
+A terminal-based utility that helps you build cloud-init ready Linux VM templates in Proxmox VE.
 
-It simplifies the creation of cloud-init–enabled VM templates using official Linux cloud images. The script presents a menu-driven interface (via whiptail) to select from a list of popular distributions (e.g., Ubuntu, Debian, CentOS, Fedora, Gentoo, openSUSE), and automatically downloads, imports, and configures them as reusable Proxmox templates.
+It simplifies the creation of cloud-init enabled VM templates using official Linux cloud images. The script presents a menu-driven interface (via whiptail) to select from a list of popular distributions (e.g., Ubuntu, Debian, CentOS, Fedora, Gentoo, openSUSE), and automatically downloads, imports, and configures them as reusable Proxmox templates.
 <p><b>FEATURES:</b></p>
 
 Supports official qcow2 cloud images (NoCloud or GenericCloud)
