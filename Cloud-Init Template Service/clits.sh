@@ -69,7 +69,7 @@ pause() {
 
 # ------------ Informational Header --------------
 show_whiptail_header() {
-    local header="${1:-"ℹ️ Welcome!"}"
+    local header="${1:-"Welcome!"}"
     whiptail --title "$header" --msgbox "\
       ############################################
       #     $BRANDING_LOGO_ICON $BRANDING_TITLE        #
