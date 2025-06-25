@@ -1,4 +1,4 @@
-<img src="">
+<img src="https://thelittleflea.com/wp-content/uploads/2025/06/Proxmox-Penguin-Trans-BG.webp" height=300 style="display: block;margin: auto;width: 50%;">
 <h1>Proxmox Cloud-Init Template Service</h1>
 
 A terminal-based utility that helps you build cloud-init–ready Linux VM templates in Proxmox VE, so you can stop clicking through the web UI and start templating like a boss.
