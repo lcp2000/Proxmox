@@ -19,6 +19,7 @@ clear
 ########################
 #
 # Path to splash image
+wget -nc https://github.com/lcp2000/Proxmox/tree/main/splash2boot/splash2boot.jpg
 SPLASH_IMAGE="splash2boot.jpg"
 
 
