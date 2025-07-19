@@ -41,3 +41,10 @@ Modular structure for easy extension
 <b>LICENSE:</b>
 - <a href="https://raw.githubusercontent.com/lcp2000/Proxmox/refs/heads/Licensing/MIT%20LICENSE">MIT</a> or the "If it works, you're welcome to buy me a cup of coffee" license.
 
+<b>USAGE:</b>
+- Make it executable<br>
+  sudo chmod -x clits.sh
+
+- Run it as sudo and follow instructions<br>
+  sudo ./clits.sh
+  
