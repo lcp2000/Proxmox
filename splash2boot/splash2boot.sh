@@ -118,7 +118,7 @@ install() {
             3>&1 1>&2 2>&3) || exit
 
         case "$choice" in
-            1) install ;;
+            1) break ;;
             2) clear; exit 0 ;;
         esac
     done
