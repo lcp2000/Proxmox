@@ -9,7 +9,6 @@
 #                                         #
 #       Tested on Proxmox (PVE 8.4)       #
 ###########################################
-sudo -i
 set -e
 clear
 
