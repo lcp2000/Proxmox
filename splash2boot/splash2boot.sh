@@ -12,7 +12,6 @@
 set -e
 clear
 
-
 ########################
 # USER SETTINGS
 ########################
@@ -61,8 +60,6 @@ if [ ${#missing_cmds[@]} -gt 0 ]; then
     fi
 fi
 
-
-
 #####################################################
 # FUNCTIONS
 #####################################################
@@ -80,8 +77,6 @@ show_splash_screen() {
 #       Tested on Proxmox (PVE 8.4)       #
 ###########################################" 20 47
 }
-
-
 
 ########################
 # MENU ITEMS
@@ -102,14 +97,11 @@ show_main_menu() {
     done
 }
 
-
 #####################################################
 # START
 #####################################################
 #
-
 install() {
-
     while true; do
         choice=$(whiptail --title "🔧 Splash 2 Boot" --menu "Are you sure you wish to continue\nwith splash image installation?\n\nChoose an option:" 15 60 4 \
             1 "Continue Install..." \
@@ -122,15 +114,20 @@ install() {
         esac
     done
 
-  echo "Copying splash image into VM..."
-  mkdir -p /boot/grub
-  bash -c "cat > /boot/grub/bootsplash.jpg" < "$SPLASH_IMAGE"
+    echo "Copying splash image into VM..."
+    sudo mkdir -p /boot/grub
+    sudo cp "$SPLASH_IMAGE" /boot/grub/bootsplash.jpg
 
-  echo
+    echo
 
-  echo "Configuring GRUB..."
-  bash -c "sed -i 's|^GRUB_BACKGROUND=.*|GRUB_BACKGROUND=/boot/grub/bootsplash.jpg|' /etc/default/grub || echo 'GRUB_BACKGROUND=/boot/grub/bootsplash.jpg' >> /etc/default/grub"
-  update-grub
+    echo "Configuring GRUB..."
+    if grep -q '^GRUB_BACKGROUND=' /etc/default/grub; then
+        sudo sed -i 's|^GRUB_BACKGROUND=.*|GRUB_BACKGROUND=/boot/grub/bootsplash.jpg|' /etc/default/grub
+    else
+        echo 'GRUB_BACKGROUND=/boot/grub/bootsplash.jpg' | sudo tee -a /etc/default/grub > /dev/null
+    fi
+
+    sudo update-grub
 }
 
 show_splash_screen
