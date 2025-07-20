@@ -1,0 +1,44 @@
+# We need this, to disable the standardtext
+title-text: ""
+
+# The Background Image
+desktop-image: "background.png"
+
++ boot_menu {
+    left = 9%
+    top = 30%
+    width = 80%
+    height = 40%
+    item_height = 24
+    item_padding = 4
+    item_spacing = 0
+    item_icon_space = 0
+    selected_item_color = "#edbb99"
+    item_color = "#cccccc"
+}
+
++ label {
+    text = "🔧 The Tower 600 Boot Menu"
+    font = "Terminus-Bold-32"
+    color = "#ffffff"
+    top = 8%
+    left = 6%
+}
+
+#+ image {
+#    file = "docker.png"
+#    top = 60%
+#    left = 40%
+#    width = 20%
+#}
+
+#This label is only shown, if the countdown is interrupted by the user (e.g.
+# if the user presses Key-Down 
++ label {
+    top = 60%
+    left = 20%
+    font = "DejaVuSansMono 16"
+    text = "Countdown Disabled"
+    color = "#266226"
+}
+
